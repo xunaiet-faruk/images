@@ -83,20 +83,20 @@
     </header>
 
     <main>
-        <section class="max-w-screen mx-auto px-16 py-5">
+        <section class="max-w-screen mx-auto px-16 py-5 relative">
 
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="banner1.png" class="w-full" />
-                    <div class="absolute left-72 top-40 text-center">
+                    <div class="absolute left-72 top-20 text-center">
                         <h1 class="text-6xl text-white font-bold mb-5"> Exotic tastes at your <br>doorstep </h1>
                         <p class="text-white mb-5"> We supply highly quality organic products</p>
                         <button class="btn bg-[#F85559] text-white px-5 border-none">Shop Now</button>
 
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white border-none">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
@@ -108,8 +108,8 @@
 
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
@@ -121,8 +121,8 @@
 
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
@@ -134,13 +134,42 @@
 
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
                     </div>
                 </div>
             </div>
 
+        </section>
 
+        <section class="max-w-screen mx-auto px-16 py-5">
+
+
+            <div class="flex gap-10 justify-evenly bg-[#FFFFFF] p-5 rounded-xl absolute -bottom-20 right-48">
+
+                <div>
+                    <img src="fruit1.png">
+                    <p class="ml-5"> Strawberry</p>
+                </div>
+                <div>
+                    <img src="fruit2.png">
+                    <p class="ml-5">Orange</p>
+                </div>
+                <div>
+                    <img src="fruit3.png">
+                    <p class="ml-5">Mango</p>
+                </div>
+                <div>
+                    <img src="fruit4.png">
+                    <p class="ml-5">Strawberry</p>
+                </div>
+                <div>
+                    <img src="fruit5.png">
+                    <p class="ml-5">Mango</p>
+                </div>
+
+
+            </div>
 
 
         </section>
@@ -212,7 +241,52 @@
 
                         <div class="card-actions">
 
-                            <a class="text-[#F85559]" href="#">Details </a>
+                            <!-- modal-1 -->
+                            <button class="btn text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+                            <dialog id="my_modal_4" class="">
+                                <form method="dialog" class="">
+                                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+
+                                    <div class="card shadow-xl">
+                                        <figure class="px-10 pt-10">
+                                            <img src="fruit6.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                                            <p class="mb-5">Apples</p>
+
+                                            <div class="rating rating-lg rating-half mb-5">
+                                                <input type="radio" name="rating-5" class="rating-hidden" />
+                                                <input type="radio" name="rating-6"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-7"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-8"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            </div>
+                                            <div class="flex gap-5">
+                                                <button class="btn text-[#F85559] px-5 border-none">Clear
+                                                </button>
+                                                <button class="btn bg-[#F85559] text-white px-5 border-none">Buy
+                                                    All</button>
+                                            </div>
+
+                                </form>
+                            </dialog>
 
                         </div>
                     </div>
@@ -243,7 +317,51 @@
 
 
                         <div class="card-actions">
-                            <a class="text-[#F85559]" href="#">Details </a>
+
+                            <!-- Modal-2 -->
+                            <button class="btn text-[#F85559]" onclick="my_modal_5.showModal()">Details</button>
+                            <dialog id="my_modal_5" class="">
+                                <form method="dialog" class="">
+                                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                    <div class="card  bg-base-100 shadow-xl">
+                                        <figure class="px-10 pt-10">
+                                            <img src="fruit7.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                                            <p class="mb-5">Orange</p>
+
+                                            <div class="rating rating-lg rating-half mb-5">
+                                                <input type="radio" name="rating-5" class="rating-hidden" />
+                                                <input type="radio" name="rating-6"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-7"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-8"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            </div>
+                                            <div class="flex gap-5">
+                                                <button class="btn text-[#F85559]">clear</button>
+                                                <button class="btn bg-[#F85559]"> Buy Now</button>
+
+                                            </div>
+
+                                </form>
+                            </dialog>
 
                         </div>
 
@@ -276,7 +394,53 @@
                         </div>
 
                         <div class="card-actions">
-                            <a class="text-[#F85559]" href="#">Details </a>
+                            <!-- MODAL--3 -->
+                            <button class="btn text-[#F85559]" onclick="my_modal_6.showModal()">Details</button>
+                            <dialog id="my_modal_6" class="">
+                                <form method="dialog" class="">
+                                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                    <div class="card  shadow-xl">
+                                        <figure class="px-10 pt-10">
+                                            <img src="fruit8.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+
+                                            <p class="mb-5">Red Dragon</p>
+
+                                            <div class="rating rating-lg rating-half mb-5">
+                                                <input type="radio" name="rating-9" class="rating-hidden" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-11"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-12"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                                <input type="radio" name="rating-10"
+                                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            </div>
+                                            <div class="flex gap-5">
+                                                <button class="btn text-[#F85559]">clear</button>
+                                                <button class="btn bg-[#F85559]"> Buy Now</button>
+
+                                            </div>
+
+                                </form>
+                            </dialog>
+
+
                         </div>
                     </div>
                 </div>
@@ -304,7 +468,7 @@
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
                             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
-          <!-- MODAL-BOX-  -->
+                        <!-- MODAL-BOX-  -->
                         <div class="card-actions">
                             <button class="btn border-none text-[#F85559] bg-none"
                                 onclick="my_modal_3.showModal()">Details</button>
@@ -343,8 +507,8 @@
                                                     class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                                             </div>
                                             <div class="flex gap-5">
-                                                <button class="btn">clear</button>
-                                                <button class="btn btn-primary"> Buy Now</button>
+                                                <button class="btn text[#F85559]">clear</button>
+                                                <button class="btn bg-[#F85559]"> Buy Now</button>
                                             </div>
                                 </form>
                             </dialog>
